@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin 관련 속성</title>
+    <style>
+        div{
+            width: 200px; 
+            height: 100px; 
+            margin: 30px; 
+            display: inline-block;
+            /* display: inline-block;은 가로로 배치할때 사용하는 속성 */
+            /* 상.하 마진은 큰 마진쪽으로 적용(중첩o), 좌.우 마진은그대로 적용(중첩x) */
+        }
+        .box1{background-color: #f00;}
+        .box2{background-color: #0f0;}
+        .box3{background-color: #00f;}
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
