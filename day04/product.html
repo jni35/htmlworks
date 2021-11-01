@@ -4,14 +4,20 @@
         <title>레드향 소개 페이지</title>
         <style>
             div{border: 1px solid #222;}
-            #container{width: 1000px; margin: 0;}
-            table, th, tr{border: 1px solid #ccc; text-align:center; border-collapse:collapse ;}
+            #container{
+                width: 1000px; 
+                margin: 0; 
+                border: 1px solid #ccc;}
+            table, th, td{
+                border: 1px solid #ccc; 
+                text-align:center; 
+                border-collapse:collapse ;}
             th{padding: 10px 20px;}
             caption{margin: 10px;}
         </style>
     </head>
     <bady>
-        <div id=contaner>
+        <div id="contaner">
         <a href="main.html">home</a>
         <a href="product.html">상품소개</a>
         <a href="#">문의하기</a>
@@ -36,36 +42,43 @@
             
             <table>
                 <caption>선물용과 가정용 상품 구성</caption>
-                <calgroup>
+                <colgroup>
                     <col style="background-color: #eee;">
                     <col>
                     <col span="2" style="width: 150px;">
                 
-                </calgroup>
+                </colgroup>
                 <thead>
+                <tr>
                     <th>용도</th>
                     <th>중량</th>
                     <th>갯수</th>
                     <th>가격</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr aria-rowspan="2">선물용</tr>
-                    <tr>3kg</tr>
-                    <tr>11~16과</tr>
-                    <tr>35,000원</tr>
-
-                    <tr>5kg</tr>
-                    <tr>11~16과</tr>
-                    <tr>52,000원</tr>
-
-                    <tr aria-rowspan="2">가정용</tr>
-                    <tr>3kg</tr>
-                    <tr>11~16과</tr>
-                    <tr>30,000원</tr>
-                
-                    <tr>5kg</tr>
-                    <tr>11~16과</tr>
-                    <tr>47,000원</tr>
+                <tr>
+                    <td rowspan="2">선물용</td>
+                    <td>3kg</td>
+                    <td>11~16과</td>
+                    <td>35,000원</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td>11~16과</td>
+                    <td>52,000원</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">가정용</td>
+                    <td>3kg</td>
+                    <td>11~16과</td>
+                    <td>30,000원</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td>11~16과</td>
+                    <td>47,000원</td>
+                </tr>
                 </tbody>
 
             </table>

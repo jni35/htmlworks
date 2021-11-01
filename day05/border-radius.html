@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius 속성</title>
+    <style>
+        .round{width:250px; height: 200px; 
+            border: 2px solid #f00; 
+            border-radius: 10px;
+            /*박스의 테두리를 둥글게 해준다.
+            10% 박스의 크기에 250px의 10%=25px*/
+            margin: 10px;
+            display: inline-block;
+            /*width와 height를 같이 써줄때는 block을 같이 써줘야 수평이 된다.*/
+        }
+        #bg1{background: url("images/cat.jpg");
+            background-size: cover; /*cover-꽉 차게 표시, 박스와 크기차이가 크면 잘려서 나올 수도 있다.*/
+        }
+        #bg2{background: url("images/cat.jpg");
+            background-size: contain; /*contain-비율에 맞춰 조정*/
+        }
+    </style>
+</head>
+<body>
+    <div class="round"></div>
+    <div class="round" id="bg1"></div>
+    <div class="round" id="bg2"></div>
+</body>
+</html>
