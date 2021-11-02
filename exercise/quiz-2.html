@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>연습문제 2</title>
+	<link rel="stylesheet"  href="./pront.css">
+
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<legend>개인정보</legend>
+				<ul id="person">
+					<li>
+						<label for="name">이름</label>
+						<input type="text" name="name" id="name">
+					</li>  
+					</li>
+					<li>
+						<label for="phone">연락처</label>
+						<input type="number" name="phone" id="name">
+					</li>
+				</ul>
+				<legend>지원 분야</legend>
+				<ul>
+					<li>						
+						<input type="radio" name="웹퍼블리싱" id="웹퍼블리싱">웹퍼블리싱
+					</li>
+					<li>						
+						<input type="radio" name="웹 어플리케이션 개발" id="웹 어플리케이션 개발">웹 어플리케이션 개발
+					</li>
+					<li>					
+						<input type="radio" name="개발 환경 개선" id="개발 환경 개선">개발 환경 개선
+					</li>
+				</ul>
+				<legend>지원 동기</legend>
+				<ul>
+					<li>
+						<textarea name="meno" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+					</li>
+				</ul>
+				<div class="button">
+					<input type="submit" value="접수하기">
+					<input type="submit" value="다시쓰기">
+					<!-- <button type="button" value=""></button> -->
+				</div>
+			</form>
+		</div>
+  </body>
+</html>
