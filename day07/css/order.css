@@ -2,12 +2,9 @@
 ul{list-style: none;}
 ul li{margin: 15px;}
 ul li label{width: 100px; float: left;}
-.button{
-    margin-top: 10px; 
-    text-align: center;}
+.button{margin-top: 10px; text-align: center;}
 .button input[type="submit"],[type="reset"]
-    {width: 150px; height: 40px; 
-    margin: 5px; font-size: 1em;}
+    {width: 150px; height: 40px; margin: 5px; font-size: 1em;}
 .button input:hover{
     background-color: darkblue; 
     color: #fff;
