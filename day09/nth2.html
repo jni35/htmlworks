@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth 속성 사용</title>
+    <style>
+        img{width: 250px; height: 225px; border: 1px solid #333;}
+        img:nth-of-type(2){border: 2px solid #ff0;}
+        /* img:nth-child(2){border: 2px solid #ff0;} */
+        /* img:nth-of-type(2){border: 2px solid #ff0;} = img:first-of-type{border-color: red;} */
+        /* img:nth-child()는 부모가 있는 경우 사용한다. */
+        /* 부모가 없는 경우는 img:nth-of-type()를 사용한다.  */
+    </style>
+</head>
+<body>
+    <img src="./images/1.jpg" alt="극장">
+    <img src="./images/2.jpg" alt="박물관">
+    <img src="./images/3.jpg" alt="시장">
+</body>
+</html>
