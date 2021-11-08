@@ -7,19 +7,22 @@
     <title>Document</title>
     <style>
         .tr1{width: 100px; height: 100px; 
-            background-color: blue;  
+            background-color: #ff0;  
             
             position: absolute;
             top: 100px;
             left: 200px;
 
-            /* transition-property: width, height */
-            /* transition-duration: 2s, 1s; */
-            transition: width, height, transform, 1s, 2s, 2s;
+            /* transition-property: width, height
+            transition-duration: 2s, 1s; */
+            /* transition: width, height, transform, 1s, 2s, 2s; */
             /* 콤마로 구분 -주의!! */
-            /*transition: all 2s; /*모든 속성에 동일한 시간 설정 - all 사용*/
+            transition: all 2s ease-in;
+            /*모든 속성에 동일한 시간 설정 - all 사용*/
+            /* ease-in은 천천히 시작한다. ease-out은 천천히 끝난다. ease-in-out은 천천히 끝나고 시작한다. */
             }
-        .tr1:hover{width: 200px; height: 150px;}
+
+        .tr1:hover{width: 200px; height: 150px; transform: rotate(180deg);}
     </style>
 </head>
 <body>
