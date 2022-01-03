@@ -1,0 +1,21 @@
+/*  전체 스타일 */
+
+/* 모바일 기준 */
+*{margin: 0; padding: 0;}
+#container{width: 1000px; margin: 0 auto; background:#f00;}
+header{height: 100px; padding:10px; border: 1px solid #fff; color: #fff;}
+section{height: 600px; padding: 10px; border: 1px solid #fff; color: #fff;}
+footer{height: 600px; padding: 10px; border: 1px solid #fff; color: #fff;}
+
+/* 테블릿 기준 */
+@media screen and (min-width: 768px) {
+    *{margin: 0; padding: 0;}
+    #container{width: 1000px; margin: 0 auto; background:#00f;}
+}
+
+/* pc 기준 */
+@media screen and (min-width: 1024px) {
+    *{margin: 0; padding: 0;}
+    #container{width: 1000px; margin: 0 auto; background:#0f0;}
+}
+
